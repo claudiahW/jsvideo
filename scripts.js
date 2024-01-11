@@ -6,3 +6,14 @@
 
 const btn = document.querySelector(".switch-btn");
 const video = document.querySelector(".video-container");
+
+// add eventlistener for the button to check if it has the slide class or not
+
+btn.addEventListener("click", function(){
+if(!btn.classList.contains("slide")){
+    btn.classList.add("slide")
+}
+else{
+ btn.classList.remove("slide");   
+}
+})
