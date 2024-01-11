@@ -19,3 +19,12 @@ else{
  video.play();  
 }
 });
+
+// target preloader class
+
+const preloader = document.querySelector(".preloader");
+
+// listen for load event on window
+window.addEventListener("load", function(){
+ preloader.classList.add("hide-preloader");
+})
